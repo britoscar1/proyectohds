@@ -1,0 +1,1413 @@
+{
+    "Español": [
+        {
+            "question": "¿Qué es una oración gramatical? ",
+            "options": [
+                "Una expresión sin sentido",
+                "Una palabra suelta",
+                "Un conjunto de palabras con sentido completo",
+                "Un verbo aislado"
+            ],
+            "answer": "Un conjunto de palabras con sentido completo"
+        },
+        {
+            "question": "¿Cuál es el sujeto en la oración 'La niña juega en el parque'? ",
+            "options": [
+                "La niña",
+                "juega",
+                "en el parque",
+                "parque"
+            ],
+            "answer": "La niña"
+        },
+        {
+            "question": "¿Qué tipo de texto da instrucciones para hacer algo? ",
+            "options": [
+                "Narrativo",
+                "Instructivo",
+                "Descriptivo",
+                "Lírico"
+            ],
+            "answer": "Instructivo"
+        },
+        {
+            "question": "¿Cuál es el antónimo de 'alegre'? ",
+            "options": [
+                "Feliz",
+                "Contento",
+                "Triste",
+                "Divertido"
+            ],
+            "answer": "Triste"
+        },
+        {
+            "question": "¿Qué es un sustantivo? ",
+            "options": [
+                "Un número",
+                "Una acción",
+                "Una cualidad",
+                "Una persona, animal o cosa"
+            ],
+            "answer": "Una persona, animal o cosa"
+        },
+        {
+            "question": "¿Qué signo se usa al final de una pregunta? ",
+            "options": [
+                "Punto",
+                "Coma",
+                "¿ ?",
+                "¡ !"
+            ],
+            "answer": "¿ ?"
+        },
+        {
+            "question": "¿Qué es un sinónimo? ",
+            "options": [
+                "Palabra parecida",
+                "Palabra opuesta",
+                "Palabra sin sentido",
+                "Palabra extranjera"
+            ],
+            "answer": "Palabra parecida"
+        },
+        {
+            "question": "¿Cuál es el plural de 'papel'? ",
+            "options": [
+                "Papeles",
+                "Papels",
+                "Papele",
+                "Papela"
+            ],
+            "answer": "Papeles"
+        },
+        {
+            "question": "¿Qué tipo de palabra es 'rápidamente'? ",
+            "options": [
+                "Sustantivo",
+                "Verbo",
+                "Adjetivo",
+                "Adverbio"
+            ],
+            "answer": "Adverbio"
+        },
+        {
+            "question": "¿Qué es una fábula? ",
+            "options": [
+                "Un poema",
+                "Un texto informativo",
+                "Un cuento con moraleja",
+                "Una noticia"
+            ],
+            "answer": "Un cuento con moraleja"
+        },
+        {
+            "question": "¿Qué es un verbo? ",
+            "options": [
+                "Un número",
+                "Una cualidad",
+                "Una acción",
+                "Un lugar"
+            ],
+            "answer": "Una acción"
+        },
+        {
+            "question": "¿Cuál es el propósito de un texto narrativo? ",
+            "options": [
+                "Informar",
+                "Describir",
+                "Contar una historia",
+                "Dar instrucciones"
+            ],
+            "answer": "Contar una historia"
+        },
+        {
+            "question": "¿Cuál es el género literario de un poema? ",
+            "options": [
+                "Narrativo",
+                "Lírico",
+                "Dramático",
+                "Informativo"
+            ],
+            "answer": "Lírico"
+        },
+        {
+            "question": "¿Qué es un adjetivo? ",
+            "options": [
+                "Describe a un sustantivo",
+                "Es una acción",
+                "Es un número",
+                "Es una frase"
+            ],
+            "answer": "Describe a un sustantivo"
+        },
+        {
+            "question": "¿Cuál es el verbo en la oración 'Pedro corre rápido'? ",
+            "options": [
+                "Pedro",
+                "corre",
+                "rápido",
+                "rápido corre"
+            ],
+            "answer": "corre"
+        },
+        {
+            "question": "¿Qué es un texto descriptivo? ",
+            "options": [
+                "Cuenta una historia",
+                "Da una opinión",
+                "Describe cómo es algo",
+                "Instruye"
+            ],
+            "answer": "Describe cómo es algo"
+        },
+        {
+            "question": "¿Qué tipo de texto es una noticia? ",
+            "options": [
+                "Narrativo",
+                "Lírico",
+                "Informativo",
+                "Instructivo"
+            ],
+            "answer": "Informativo"
+        },
+        {
+            "question": "¿Qué es una sílaba? ",
+            "options": [
+                "Una oración corta",
+                "Un sonido que forma palabras",
+                "Una letra",
+                "Un número"
+            ],
+            "answer": "Un sonido que forma palabras"
+        },
+        {
+            "question": "¿Qué es una oración interrogativa? ",
+            "options": [
+                "Da una orden",
+                "Hace una afirmación",
+                "Hace una pregunta",
+                "Explica algo"
+            ],
+            "answer": "Hace una pregunta"
+        },
+        {
+            "question": "¿Qué palabra es un adjetivo? ",
+            "options": [
+                "Perro",
+                "Corre",
+                "Alto",
+                "Jugar"
+            ],
+            "answer": "Alto"
+        },
+        {
+            "question": "¿Cuál de estas palabras es un verbo? ",
+            "options": [
+                "Correr",
+                "Mesa",
+                "Rápido",
+                "Color"
+            ],
+            "answer": "Correr"
+        },
+        {
+            "question": "¿Qué es una carta formal? ",
+            "options": [
+                "Mensaje informal",
+                "Poema",
+                "Texto que sigue reglas y se usa en trabajo o escuela",
+                "Narración corta"
+            ],
+            "answer": "Texto que sigue reglas y se usa en trabajo o escuela"
+        },
+        {
+            "question": "¿Qué se necesita para escribir un cuento? ",
+            "options": [
+                "Solo una idea",
+                "Una noticia",
+                "Personajes, lugar y trama",
+                "Una fábula"
+            ],
+            "answer": "Personajes, lugar y trama"
+        },
+        {
+            "question": "¿Qué es un pronombre? ",
+            "options": [
+                "Palabra que sustituye al sustantivo",
+                "Nombre de persona",
+                "Acción",
+                "Cualidad"
+            ],
+            "answer": "Palabra que sustituye al sustantivo"
+        },
+        {
+            "question": "¿Cuál es el antónimo de 'rápido'? ",
+            "options": [
+                "Lento",
+                "Feliz",
+                "Triste",
+                "Ligero"
+            ],
+            "answer": "Lento"
+        },
+        {
+            "question": "¿Qué es una historieta? ",
+            "options": [
+                "Un cuento largo",
+                "Texto con dibujos que cuenta una historia",
+                "Un poema",
+                "Una noticia"
+            ],
+            "answer": "Texto con dibujos que cuenta una historia"
+        },
+        {
+            "question": "¿Cuál es la idea principal de un texto? ",
+            "options": [
+                "El dibujo",
+                "La parte divertida",
+                "Lo más importante que se dice",
+                "La primera palabra"
+            ],
+            "answer": "Lo más importante que se dice"
+        },
+        {
+            "question": "¿Qué es un diálogo? ",
+            "options": [
+                "Una descripción",
+                "Una lista",
+                "Una conversación entre dos o más personas",
+                "Una receta"
+            ],
+            "answer": "Una conversación entre dos o más personas"
+        },
+        {
+            "question": "¿Qué es una biografía? ",
+            "options": [
+                "Historia inventada",
+                "Cuento",
+                "Historia real sobre una persona",
+                "Poema largo"
+            ],
+            "answer": "Historia real sobre una persona"
+        },
+        {
+            "question": "¿Qué palabra es un sustantivo? ",
+            "options": [
+                "Correr",
+                "Amarillo",
+                "Casa",
+                "Rápidamente"
+            ],
+            "answer": "Casa"
+        }
+    ],
+    "Matemáticas": [
+        {
+            "question": "¿Cuánto es 6 x 7?",
+            "options": [
+                "42",
+                "36",
+                "40",
+                "48"
+            ],
+            "answer": "42"
+        },
+        {
+            "question": "¿Qué es un número par?",
+            "options": [
+                "Divisible entre 2",
+                "Impar",
+                "Negativo",
+                "Decimal"
+            ],
+            "answer": "Divisible entre 2"
+        },
+        {
+            "question": "¿Cuántos lados tiene un pentágono?",
+            "options": [
+                "4",
+                "5",
+                "6",
+                "7"
+            ],
+            "answer": "5"
+        },
+        {
+            "question": "¿Qué es una fracción?",
+            "options": [
+                "Parte de un todo",
+                "Número entero",
+                "Número primo",
+                "Múltiplo"
+            ],
+            "answer": "Parte de un todo"
+        },
+        {
+            "question": "¿Qué número sigue en la secuencia: 3, 6, 9, ?",
+            "options": [
+                "12",
+                "10",
+                "11",
+                "8"
+            ],
+            "answer": "12"
+        },
+        {
+            "question": "¿Qué instrumento mide ángulos?",
+            "options": [
+                "Regla",
+                "Transportador",
+                "Compás",
+                "Termómetro"
+            ],
+            "answer": "Transportador"
+        },
+        {
+            "question": "¿Cuál es el triple de 5?",
+            "options": [
+                "10",
+                "15",
+                "20",
+                "25"
+            ],
+            "answer": "15"
+        },
+        {
+            "question": "¿Qué figura tiene 3 lados?",
+            "options": [
+                "Cuadrado",
+                "Círculo",
+                "Triángulo",
+                "Rectángulo"
+            ],
+            "answer": "Triángulo"
+        },
+        {
+            "question": "¿Cuánto es 81 dividido entre 9?",
+            "options": [
+                "7",
+                "8",
+                "9",
+                "10"
+            ],
+            "answer": "9"
+        },
+        {
+            "question": "¿Qué es un ángulo recto?",
+            "options": [
+                "90 grados",
+                "60 grados",
+                "120 grados",
+                "180 grados"
+            ],
+            "answer": "90 grados"
+        },
+        {
+            "question": "¿Qué significa el símbolo '+'?",
+            "options": [
+                "Multiplicar",
+                "Restar",
+                "Sumar",
+                "Dividir"
+            ],
+            "answer": "Sumar"
+        },
+        {
+            "question": "¿Qué número es mayor: 1/2 o 3/4?",
+            "options": [
+                "1/2",
+                "3/4",
+                "Son iguales",
+                "Ninguno"
+            ],
+            "answer": "3/4"
+        },
+        {
+            "question": "¿Cuántos centímetros hay en un metro?",
+            "options": [
+                "10",
+                "100",
+                "1000",
+                "50"
+            ],
+            "answer": "100"
+        },
+        {
+            "question": "¿Cuál es el número romano para 10?",
+            "options": [
+                "X",
+                "V",
+                "L",
+                "I"
+            ],
+            "answer": "X"
+        },
+        {
+            "question": "¿Qué número completa la serie: 2, 4, 6, ?",
+            "options": [
+                "8",
+                "9",
+                "7",
+                "10"
+            ],
+            "answer": "8"
+        },
+        {
+            "question": "¿Qué es una decena?",
+            "options": [
+                "Grupo de 10",
+                "Grupo de 5",
+                "Grupo de 100",
+                "Grupo de 1000"
+            ],
+            "answer": "Grupo de 10"
+        },
+        {
+            "question": "¿Qué instrumento se usa para medir ángulos?",
+            "options": [
+                "Regla",
+                "Transportador",
+                "Compás",
+                "Microscopio"
+            ],
+            "answer": "Transportador"
+        },
+        {
+            "question": "¿Cuánto es 100 - 25?",
+            "options": [
+                "50",
+                "75",
+                "60",
+                "80"
+            ],
+            "answer": "75"
+        },
+        {
+            "question": "¿Cuánto es 3 x 8?",
+            "options": [
+                "24",
+                "21",
+                "18",
+                "30"
+            ],
+            "answer": "24"
+        },
+        {
+            "question": "¿Qué tipo de número es 0?",
+            "options": [
+                "Negativo",
+                "Entero",
+                "Par",
+                "Todos los anteriores"
+            ],
+            "answer": "Todos los anteriores"
+        },
+        {
+            "question": "¿Qué parte de la hora representa un cuarto?",
+            "options": [
+                "5 minutos",
+                "10 minutos",
+                "15 minutos",
+                "30 minutos"
+            ],
+            "answer": "15 minutos"
+        },
+        {
+            "question": "¿Qué número falta en la secuencia: 10, 20, __, 40?",
+            "options": [
+                "25",
+                "30",
+                "35",
+                "45"
+            ],
+            "answer": "30"
+        },
+        {
+            "question": "¿Cuánto es 2 + 3 x 4?",
+            "options": [
+                "20",
+                "14",
+                "12",
+                "10"
+            ],
+            "answer": "14"
+        },
+        {
+            "question": "¿Qué es un múltiplo?",
+            "options": [
+                "Número que divide a otro",
+                "Resultado de una suma",
+                "Resultado de una multiplicación",
+                "Número negativo"
+            ],
+            "answer": "Resultado de una multiplicación"
+        },
+        {
+            "question": "¿Cuál es el área de un cuadrado de lado 5?",
+            "options": [
+                "10",
+                "20",
+                "25",
+                "30"
+            ],
+            "answer": "25"
+        },
+        {
+            "question": "¿Cuál es la mitad de 50?",
+            "options": [
+                "20",
+                "25",
+                "30",
+                "35"
+            ],
+            "answer": "25"
+        },
+        {
+            "question": "¿Qué es un gráfico de barras?",
+            "options": [
+                "Representación visual de datos",
+                "Texto informativo",
+                "Fracción",
+                "Cálculo algebraico"
+            ],
+            "answer": "Representación visual de datos"
+        },
+        {
+            "question": "¿Qué es una estimación?",
+            "options": [
+                "Medición exacta",
+                "Aproximación",
+                "División",
+                "Cálculo incorrecto"
+            ],
+            "answer": "Aproximación"
+        },
+        {
+            "question": "¿Cuál es el número anterior a 100?",
+            "options": [
+                "99",
+                "101",
+                "98",
+                "97"
+            ],
+            "answer": "99"
+        },
+        {
+            "question": "¿Cuántos minutos tiene una hora?",
+            "options": [
+                "60",
+                "30",
+                "45",
+                "90"
+            ],
+            "answer": "60"
+        }
+    ],
+    "Ciencias Naturales": [
+        {
+            "question": "¿Qué órgano bombea la sangre?",
+            "options": [
+                "Cerebro",
+                "Corazón",
+                "Pulmón",
+                "Riñón"
+            ],
+            "answer": "Corazón"
+        },
+        {
+            "question": "¿Cuál es el planeta más cercano al Sol?",
+            "options": [
+                "Tierra",
+                "Venus",
+                "Marte",
+                "Mercurio"
+            ],
+            "answer": "Mercurio"
+        },
+        {
+            "question": "¿Qué seres vivos hacen fotosíntesis?",
+            "options": [
+                "Animales",
+                "Hongos",
+                "Plantas",
+                "Bacterias"
+            ],
+            "answer": "Plantas"
+        },
+        {
+            "question": "¿Qué parte del cuerpo usamos para oír?",
+            "options": [
+                "Ojos",
+                "Boca",
+                "Oídos",
+                "Manos"
+            ],
+            "answer": "Oídos"
+        },
+        {
+            "question": "¿Qué sustancia respiramos del aire?",
+            "options": [
+                "Dióxido de carbono",
+                "Nitrógeno",
+                "Oxígeno",
+                "Hidrógeno"
+            ],
+            "answer": "Oxígeno"
+        },
+        {
+            "question": "¿Qué tipo de animal es el delfín?",
+            "options": [
+                "Ave",
+                "Mamífero",
+                "Reptil",
+                "Pez"
+            ],
+            "answer": "Mamífero"
+        },
+        {
+            "question": "¿Qué parte del cuerpo cubre el esqueleto?",
+            "options": [
+                "Órganos",
+                "Músculos",
+                "Piel",
+                "Sangre"
+            ],
+            "answer": "Órganos"
+        },
+        {
+            "question": "¿Qué función cumple el sistema digestivo?",
+            "options": [
+                "Respirar",
+                "Moverse",
+                "Procesar alimentos",
+                "Pensar"
+            ],
+            "answer": "Procesar alimentos"
+        },
+        {
+            "question": "¿Cuál es el estado del agua en el hielo?",
+            "options": [
+                "Líquido",
+                "Sólido",
+                "Gaseoso",
+                "Plasma"
+            ],
+            "answer": "Sólido"
+        },
+        {
+            "question": "¿Qué órgano usamos para pensar?",
+            "options": [
+                "Corazón",
+                "Cerebro",
+                "Riñón",
+                "Estómago"
+            ],
+            "answer": "Cerebro"
+        },
+        {
+            "question": "¿Qué tipo de energía usa una linterna?",
+            "options": [
+                "Solar",
+                "Eléctrica",
+                "Térmica",
+                "Cinética"
+            ],
+            "answer": "Eléctrica"
+        },
+        {
+            "question": "¿Qué planeta es conocido como el planeta rojo?",
+            "options": [
+                "Venus",
+                "Júpiter",
+                "Marte",
+                "Saturno"
+            ],
+            "answer": "Marte"
+        },
+        {
+            "question": "¿Qué seres vivos nacen de huevos?",
+            "options": [
+                "Mamíferos",
+                "Aves",
+                "Reptiles",
+                "Aves y reptiles"
+            ],
+            "answer": "Aves y reptiles"
+        },
+        {
+            "question": "¿Qué hacemos con los pulmones?",
+            "options": [
+                "Ver",
+                "Oír",
+                "Respirar",
+                "Pensar"
+            ],
+            "answer": "Respirar"
+        },
+        {
+            "question": "¿Qué animal vive en el agua?",
+            "options": [
+                "Gato",
+                "Perro",
+                "Pez",
+                "Mono"
+            ],
+            "answer": "Pez"
+        },
+        {
+            "question": "¿Qué parte de la planta produce flores?",
+            "options": [
+                "Tallo",
+                "Raíz",
+                "Hoja",
+                "Flor"
+            ],
+            "answer": "Flor"
+        },
+        {
+            "question": "¿Qué parte del cuerpo usamos para ver?",
+            "options": [
+                "Manos",
+                "Pies",
+                "Ojos",
+                "Orejas"
+            ],
+            "answer": "Ojos"
+        },
+        {
+            "question": "¿Qué órganos forman parte del sistema circulatorio?",
+            "options": [
+                "Hígado y riñones",
+                "Corazón y vasos sanguíneos",
+                "Pulmones y bronquios",
+                "Estómago y intestinos"
+            ],
+            "answer": "Corazón y vasos sanguíneos"
+        },
+        {
+            "question": "¿Qué planeta tiene anillos?",
+            "options": [
+                "Tierra",
+                "Saturno",
+                "Marte",
+                "Venus"
+            ],
+            "answer": "Saturno"
+        },
+        {
+            "question": "¿Qué elemento es esencial para respirar?",
+            "options": [
+                "Nitrógeno",
+                "Hidrógeno",
+                "Oxígeno",
+                "Helio"
+            ],
+            "answer": "Oxígeno"
+        },
+        {
+            "question": "¿Qué nos protege de enfermedades?",
+            "options": [
+                "Sistema nervioso",
+                "Sistema inmunológico",
+                "Sistema muscular",
+                "Sistema digestivo"
+            ],
+            "answer": "Sistema inmunológico"
+        },
+        {
+            "question": "¿Qué producen las plantas en la fotosíntesis?",
+            "options": [
+                "Agua",
+                "Sal",
+                "Oxígeno",
+                "Petróleo"
+            ],
+            "answer": "Oxígeno"
+        },
+        {
+            "question": "¿Qué animal es un mamífero?",
+            "options": [
+                "Tiburón",
+                "Águila",
+                "Perro",
+                "Cocodrilo"
+            ],
+            "answer": "Perro"
+        },
+        {
+            "question": "¿Cómo se llama el ciclo del agua?",
+            "options": [
+                "Ciclo vital",
+                "Ciclo atmosférico",
+                "Ciclo hidrológico",
+                "Ciclo solar"
+            ],
+            "answer": "Ciclo hidrológico"
+        },
+        {
+            "question": "¿Qué parte del cuerpo usamos para saborear?",
+            "options": [
+                "Ojos",
+                "Lengua",
+                "Orejas",
+                "Manos"
+            ],
+            "answer": "Lengua"
+        },
+        {
+            "question": "¿Qué parte del cuerpo produce la voz?",
+            "options": [
+                "Pulmones",
+                "Garganta",
+                "Laringe",
+                "Estómago"
+            ],
+            "answer": "Laringe"
+        },
+        {
+            "question": "¿Qué necesita una planta para hacer fotosíntesis?",
+            "options": [
+                "Sombra",
+                "Sal",
+                "Luz solar",
+                "Lluvia ácida"
+            ],
+            "answer": "Luz solar"
+        },
+        {
+            "question": "¿Qué órgano filtra la sangre?",
+            "options": [
+                "Estómago",
+                "Riñón",
+                "Pulmón",
+                "Hígado"
+            ],
+            "answer": "Riñón"
+        },
+        {
+            "question": "¿Qué sentido usamos para oler?",
+            "options": [
+                "Vista",
+                "Tacto",
+                "Oído",
+                "Olfato"
+            ],
+            "answer": "Olfato"
+        },
+        {
+            "question": "¿Qué transforma la energía solar en eléctrica?",
+            "options": [
+                "Pila",
+                "Dínamo",
+                "Panel solar",
+                "Cable"
+            ],
+            "answer": "Panel solar"
+        }
+    ],
+    "Geografía": [
+        {
+            "question": "¿Qué continente está al sur de Europa?",
+            "options": [
+                "Asia",
+                "África",
+                "Oceanía",
+                "América"
+            ],
+            "answer": "África"
+        },
+        {
+            "question": "¿Cuál es la capital de Francia?",
+            "options": [
+                "Madrid",
+                "Roma",
+                "París",
+                "Londres"
+            ],
+            "answer": "París"
+        },
+        {
+            "question": "¿Qué línea divide el planeta en norte y sur?",
+            "options": [
+                "Ecuador",
+                "Meridiano de Greenwich",
+                "Trópico de Cáncer",
+                "Trópico de Capricornio"
+            ],
+            "answer": "Ecuador"
+        },
+        {
+            "question": "¿Qué país tiene forma de bota?",
+            "options": [
+                "Francia",
+                "Italia",
+                "Alemania",
+                "Egipto"
+            ],
+            "answer": "Italia"
+        },
+        {
+            "question": "¿Qué es una península?",
+            "options": [
+                "Isla rodeada completamente",
+                "Tierra rodeada de agua por tres lados",
+                "Montaña",
+                "Río pequeño"
+            ],
+            "answer": "Tierra rodeada de agua por tres lados"
+        },
+        {
+            "question": "¿Qué país limita con México al norte?",
+            "options": [
+                "Canadá",
+                "Guatemala",
+                "Estados Unidos",
+                "Belice"
+            ],
+            "answer": "Estados Unidos"
+        },
+        {
+            "question": "¿Qué es un desierto?",
+            "options": [
+                "Zona húmeda",
+                "Zona seca con poca vegetación",
+                "Montaña alta",
+                "Río seco"
+            ],
+            "answer": "Zona seca con poca vegetación"
+        },
+        {
+            "question": "¿Cuál es el río más largo del mundo?",
+            "options": [
+                "Amazonas",
+                "Nilo",
+                "Yangtsé",
+                "Misisipi"
+            ],
+            "answer": "Nilo"
+        },
+        {
+            "question": "¿Qué océano baña las costas del este de México?",
+            "options": [
+                "Pacífico",
+                "Ártico",
+                "Atlántico",
+                "Índico"
+            ],
+            "answer": "Atlántico"
+        },
+        {
+            "question": "¿Qué representa el color azul en los mapas físicos?",
+            "options": [
+                "Montañas",
+                "Ríos y lagos",
+                "Selvas",
+                "Desiertos"
+            ],
+            "answer": "Ríos y lagos"
+        },
+        {
+            "question": "¿Qué continente es conocido por su gran biodiversidad?",
+            "options": [
+                "Europa",
+                "América",
+                "África",
+                "Australia"
+            ],
+            "answer": "América"
+        },
+        {
+            "question": "¿Cuál es la cordillera más larga del mundo?",
+            "options": [
+                "Himalaya",
+                "Alpes",
+                "Andes",
+                "Rocosas"
+            ],
+            "answer": "Andes"
+        },
+        {
+            "question": "¿Qué país se encuentra en América del Sur?",
+            "options": [
+                "Canadá",
+                "Brasil",
+                "España",
+                "China"
+            ],
+            "answer": "Brasil"
+        },
+        {
+            "question": "¿Qué es una llanura?",
+            "options": [
+                "Zona montañosa",
+                "Terreno plano y extenso",
+                "Río largo",
+                "Isla pequeña"
+            ],
+            "answer": "Terreno plano y extenso"
+        },
+        {
+            "question": "¿Qué tipo de clima tiene la selva?",
+            "options": [
+                "Frío",
+                "Seco",
+                "Tropical y húmedo",
+                "Árido"
+            ],
+            "answer": "Tropical y húmedo"
+        },
+        {
+            "question": "¿Dónde se encuentra el Polo Norte?",
+            "options": [
+                "Hemisferio sur",
+                "Ecuador",
+                "Océano Ártico",
+                "Océano Índico"
+            ],
+            "answer": "Océano Ártico"
+        },
+        {
+            "question": "¿Qué país es una isla?",
+            "options": [
+                "Brasil",
+                "Alemania",
+                "Australia",
+                "México"
+            ],
+            "answer": "Australia"
+        },
+        {
+            "question": "¿Qué se estudia en la geografía?",
+            "options": [
+                "Las plantas",
+                "Los animales",
+                "Los planetas",
+                "La Tierra y sus fenómenos"
+            ],
+            "answer": "La Tierra y sus fenómenos"
+        },
+        {
+            "question": "¿Qué es un volcán?",
+            "options": [
+                "Río subterráneo",
+                "Montaña con lava",
+                "Lago grande",
+                "Valle fértil"
+            ],
+            "answer": "Montaña con lava"
+        },
+        {
+            "question": "¿Qué instrumento mide la dirección?",
+            "options": [
+                "Termómetro",
+                "Barómetro",
+                "Brújula",
+                "Regla"
+            ],
+            "answer": "Brújula"
+        },
+        {
+            "question": "¿Qué zona tiene estaciones muy marcadas?",
+            "options": [
+                "Desierto",
+                "Tundra",
+                "Templada",
+                "Tropical"
+            ],
+            "answer": "Templada"
+        },
+        {
+            "question": "¿Qué es un continente?",
+            "options": [
+                "Ciudad",
+                "Gran masa de tierra",
+                "Océano",
+                "Isla pequeña"
+            ],
+            "answer": "Gran masa de tierra"
+        },
+        {
+            "question": "¿Qué país se encuentra en Centroamérica?",
+            "options": [
+                "Panamá",
+                "Chile",
+                "Canadá",
+                "Colombia"
+            ],
+            "answer": "Panamá"
+        },
+        {
+            "question": "¿Qué representa el color verde en un mapa físico?",
+            "options": [
+                "Zonas desérticas",
+                "Selvas o zonas vegetales",
+                "Océanos",
+                "Ciudades"
+            ],
+            "answer": "Selvas o zonas vegetales"
+        },
+        {
+            "question": "¿Qué océano está entre África y Australia?",
+            "options": [
+                "Pacífico",
+                "Índico",
+                "Atlántico",
+                "Ártico"
+            ],
+            "answer": "Índico"
+        },
+        {
+            "question": "¿Qué ciudad es capital de Argentina?",
+            "options": [
+                "Buenos Aires",
+                "Bogotá",
+                "Santiago",
+                "Quito"
+            ],
+            "answer": "Buenos Aires"
+        },
+        {
+            "question": "¿Cuál es un ejemplo de recurso natural?",
+            "options": [
+                "Plástico",
+                "Gasolina",
+                "Petróleo",
+                "Vidrio"
+            ],
+            "answer": "Petróleo"
+        },
+        {
+            "question": "¿Qué país es más extenso en el mundo?",
+            "options": [
+                "Canadá",
+                "China",
+                "Rusia",
+                "Brasil"
+            ],
+            "answer": "Rusia"
+        },
+        {
+            "question": "¿Qué región es conocida por tener muchas montañas?",
+            "options": [
+                "Siberia",
+                "Andes",
+                "Amazonas",
+                "Desierto del Sahara"
+            ],
+            "answer": "Andes"
+        },
+        {
+            "question": "¿Qué representa una estrella en un mapa?",
+            "options": [
+                "Montaña",
+                "Capital",
+                "Río",
+                "Lago"
+            ],
+            "answer": "Capital"
+        }
+    ],
+    "Historia": [],
+    "Formación Cívica y Ética": [
+        {
+            "question": "¿Qué es la solidaridad?",
+            "options": [
+                "Apoyar a otros",
+                "Mentir",
+                "Reírse",
+                "Ignorar"
+            ],
+            "answer": "Apoyar a otros"
+        },
+        {
+            "question": "¿Qué valor se practica al respetar opiniones?",
+            "options": [
+                "Tolerancia",
+                "Orgullo",
+                "Silencio",
+                "Crítica"
+            ],
+            "answer": "Tolerancia"
+        },
+        {
+            "question": "¿Qué es la justicia?",
+            "options": [
+                "Dar a cada quien lo que merece",
+                "Repartir todo igual",
+                "Ayudar solo a amigos",
+                "Castigar a todos"
+            ],
+            "answer": "Dar a cada quien lo que merece"
+        },
+        {
+            "question": "¿Qué hacer si ves bullying?",
+            "options": [
+                "Ignorar",
+                "Unirse",
+                "Ayudar a la víctima",
+                "Grabarlo"
+            ],
+            "answer": "Ayudar a la víctima"
+        },
+        {
+            "question": "¿Qué es convivir?",
+            "options": [
+                "Estar solo",
+                "Compartir con respeto",
+                "Pelear",
+                "Evitar a otros"
+            ],
+            "answer": "Compartir con respeto"
+        },
+        {
+            "question": "¿Qué valor se necesita para decir la verdad?",
+            "options": [
+                "Cobardía",
+                "Miedo",
+                "Honestidad",
+                "Orgullo"
+            ],
+            "answer": "Honestidad"
+        },
+        {
+            "question": "¿Qué actitud muestra responsabilidad?",
+            "options": [
+                "Hacer tareas",
+                "Copiar",
+                "Faltar a clases",
+                "Mentir"
+            ],
+            "answer": "Hacer tareas"
+        },
+        {
+            "question": "¿Qué valor se practica al cuidar el ambiente?",
+            "options": [
+                "Descuido",
+                "Responsabilidad",
+                "Indiferencia",
+                "Pereza"
+            ],
+            "answer": "Responsabilidad"
+        },
+        {
+            "question": "¿Qué es la equidad?",
+            "options": [
+                "Tratar igual a todos",
+                "Discriminar",
+                "Evitar a alguien",
+                "Compartir todo"
+            ],
+            "answer": "Tratar igual a todos"
+        },
+        {
+            "question": "¿Qué representa la bandera?",
+            "options": [
+                "Un adorno",
+                "La historia del país",
+                "Un equipo",
+                "Un grupo"
+            ],
+            "answer": "La historia del país"
+        },
+        {
+            "question": "¿Qué es un derecho?",
+            "options": [
+                "Obligación",
+                "Regalo",
+                "Algo que se merece",
+                "Algo ilegal"
+            ],
+            "answer": "Algo que se merece"
+        },
+        {
+            "question": "¿Qué debemos hacer con las normas?",
+            "options": [
+                "Romperlas",
+                "Ignorarlas",
+                "Cumplirlas",
+                "Reírse"
+            ],
+            "answer": "Cumplirlas"
+        },
+        {
+            "question": "¿Qué actitud es buena en un trabajo en equipo?",
+            "options": [
+                "Mandar",
+                "Escuchar",
+                "Discutir",
+                "Ignorar"
+            ],
+            "answer": "Escuchar"
+        },
+        {
+            "question": "¿Qué hacer si alguien no entiende?",
+            "options": [
+                "Ayudar",
+                "Reír",
+                "Molestar",
+                "Ignorar"
+            ],
+            "answer": "Ayudar"
+        },
+        {
+            "question": "¿Qué es la autoestima?",
+            "options": [
+                "Amarse a uno mismo",
+                "Criticarse",
+                "Compararse",
+                "Odiarse"
+            ],
+            "answer": "Amarse a uno mismo"
+        },
+        {
+            "question": "¿Qué valor se practica al pedir perdón?",
+            "options": [
+                "Orgullo",
+                "Humildad",
+                "Egoísmo",
+                "Mentira"
+            ],
+            "answer": "Humildad"
+        },
+        {
+            "question": "¿Qué es la empatía?",
+            "options": [
+                "Ignorar emociones",
+                "Ponerse en lugar del otro",
+                "Criticar",
+                "Hablar siempre"
+            ],
+            "answer": "Ponerse en lugar del otro"
+        },
+        {
+            "question": "¿Qué hacer si ves basura en el suelo?",
+            "options": [
+                "Patearla",
+                "Ignorarla",
+                "Tirarla al bote",
+                "Cubrirla"
+            ],
+            "answer": "Tirarla al bote"
+        },
+        {
+            "question": "¿Qué es la libertad?",
+            "options": [
+                "Hacer daño",
+                "Hacer lo que uno quiere con respeto",
+                "Evitar reglas",
+                "Imponer ideas"
+            ],
+            "answer": "Hacer lo que uno quiere con respeto"
+        },
+        {
+            "question": "¿Qué es la responsabilidad?",
+            "options": [
+                "Culpar a otros",
+                "Cumplir tareas",
+                "Ignorar deberes",
+                "Mentir"
+            ],
+            "answer": "Cumplir tareas"
+        }
+    ]
+}

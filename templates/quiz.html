@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz</title>
+  <link rel="icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/x-icon">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styleQuizz.css') }}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      background-color:rgb(247, 140, 39);
+      font-family: 'Press Start 2P', monospace;
+    }
+
+    .score-display {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 10px;
+      position: relative;
+      
+      
+    }
+
+   
+  </style>
+</head>
+<body>
+
+<div class="container quiz-container">
+  <img src="{{ url_for('static', filename='img/karli.png') }}" alt="Logo" class="karli" id="karliImage">
+  {% if not questions and not quiz_completed %}
+  <h3 class="mb-3">Selecciona una materia</h3>
+  <br>
+  <form method="GET">
+    <div class="mb-3">
+      <select name="subject" class="form-select" required>
+        <option value="" disabled selected>Elige una materia</option>
+        <option value="Español">Español</option>
+        <option value="Matemáticas">Matemáticas</option>
+        <option value="Ciencias Naturales">Ciencias Naturales</option>
+        <option value="Geografía">Geografía</option>
+        <option value="Formación Cívica y Ética">Formación Cívica y Ética</option>
+      </select>
+    </div>
+    <br>
+    <div class="mb-3">
+      <input type="text" name="username" placeholder="Tu nombre" class="form-control" required>
+    </div>
+    <div class="btn-contain">
+      <br>  
+    <button type="submit" class="btn btn-primary">Iniciar Quiz</button>
+    
+  </form>
+
+  {% elif quiz_completed %}
+  <div class="alert alert-success mt-4">
+    <h4>✅ ¡Juego completado!</h4>
+    <p>Gracias por participar, {{ username }}.</p>
+    <a href="{{ url_for('quiz') }}" class="btn btn-light">Volver a elegir materia</a>
+
+    <div class="ranking-table">
+      <h5 class="mt-4">🏆 Ranking de Mejores Puntajes en {{ subject }}</h5>
+      {% if top_scores and top_scores|length > 0 %}
+      <table class="table table-sm table-bordered">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Nombre</th>
+            <th>Puntaje</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for score in top_scores %}
+          <tr class="{% if score.username == username %}highlight{% endif %}">
+            <td>{{ loop.index }}</td>
+            <td>{{ score.username }}</td>
+            <td>{{ '%.2f'|format(score.score) }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {% else %}
+      <p class="text-muted">Aún no hay puntajes registrados para esta materia.</p>
+      {% endif %}
+    </div>
+  </div>
+
+  {% else %}
+  <h3 class="mb-3">Quiz Interactivo</h3>
+  <div id="livesCounter" class="heart-container">
+  <span class="heart" id="heart1"><i class="fa-solid fa-heart"></i></span>
+  <span class="heart" id="heart2"><i class="fa-solid fa-heart"></i></span>
+  <span class="heart" id="heart3"><i class="fa-solid fa-heart"></i></span>
+</div>
+
+
+  <div class="score-display">
+    <span class="score-box blue" id="currentScore">0</span>
+    <span class="score-mult">x</span>
+    <span class="score-box red" id="streak">1</span>
+    <div id="fireEffect" class="fire hidden"></div>
+    <audio id="streakSound" src="{{ url_for('static', filename='audio/streak_fire.mp3') }}"></audio>
+  </div>
+
+  
+  <div class="countdown-number" id="countdownDisplay">30</div>
+<div class="timer"><div class="timer-fill" id="timerFill"></div></div>
+
+
+  <form method="POST" id="quizForm">
+    <input type="hidden" name="username" value="{{ username }}">
+    <input type="hidden" name="subject" value="{{ subject }}">
+    {% for question in questions %}
+      <div class="question-card {% if loop.first %}active{% endif %}" data-index="{{ loop.index0 }}" data-question-id="{{ question.id }}">
+        <div class="mb-4">
+          <p class="fw-bold">{{ question.text }}</p>
+          {% for option in question.options %}
+            <div class="option-button" 
+                 data-correct="{{ 'true' if option.is_correct else 'false' }}" 
+                 data-option-id="{{ option.id }}">
+              {{ option.text }}
+            </div>
+          {% endfor %}
+          <input type="hidden" name="time_q{{ question.id }}" id="time_q{{ question.id }}" value="0">
+          <input type="hidden" name="question_{{ question.id }}" id="answer_q{{ question.id }}">
+          <input type="hidden" name="final_score" id="final_score" value="0">
+        </div>
+      </div>
+    {% endfor %}
+  </form>
+  {% endif %}
+</div>
+
+<script>
+  const cards = document.querySelectorAll('.question-card');
+  let current = 0;
+  let lives = 3;
+  let score = 0;
+  let streak = 0;
+  let timerInterval;
+  let questionStartTime = Date.now();
+
+  const scoreEl = document.getElementById('currentScore');
+  const streakEl = document.getElementById('streak');
+  const timerFill = document.getElementById('timerFill');
+  const streakSound = document.getElementById('streakSound');
+  const TOTAL_TIME = 30;
+
+function updateTimer(secondsLeft) {
+  const percent = (secondsLeft / TOTAL_TIME) * 100;
+  timerFill.style.width = `${percent}%`;
+
+  const countdownDisplay = document.getElementById('countdownDisplay');
+  if (countdownDisplay) {
+    countdownDisplay.textContent = secondsLeft;
+
+    if (secondsLeft <= 5) {
+      countdownDisplay.classList.add('countdown-danger');
+    } else {
+      countdownDisplay.classList.remove('countdown-danger');
+    }
+  }
+
+  timerFill.style.animation = 'none';
+  void timerFill.offsetWidth;
+
+  if (secondsLeft <= 5) {
+    timerFill.style.animation = 'blink-fast2 0.5s infinite';
+  } else if (secondsLeft <= 10) {
+    timerFill.style.animation = 'blink-medium 0.7s infinite';
+  } else if (secondsLeft <= 15) {
+    timerFill.style.animation = 'blink-slow 1s infinite';
+  }
+}
+
+
+  function startTimer() {
+    let timeLeft = TOTAL_TIME;
+    timerFill.style.width = '100%';
+    updateTimer(timeLeft);
+    timerInterval = setInterval(() => {
+      timeLeft--;
+      updateTimer(timeLeft);
+      if (timeLeft <= 0) {
+        clearInterval(timerInterval);
+        loseLifeDueToTimeout();
+      }
+    }, 1000);
+  }
+
+  function showCard(index) {
+    clearInterval(timerInterval);
+    cards.forEach(card => card.classList.remove('active'));
+    if (cards[index]) {
+      cards[index].classList.add('active');
+      questionStartTime = Date.now();
+      startTimer();
+    }
+  }
+
+  function recordTime(questionId) {
+    const timeUsed = Math.floor((Date.now() - questionStartTime) / 1000);
+    const timeInput = document.getElementById(`time_q${questionId}`);
+    if (timeInput) timeInput.value = timeUsed;
+  }
+
+  function updateScoreDisplay() {
+    scoreEl.textContent = Math.round(score);
+    streakEl.textContent = streak + 1;
+
+    scoreEl.classList.remove('pop');
+    void scoreEl.offsetWidth;
+    scoreEl.classList.add('pop');
+
+    streakEl.classList.remove('streak1', 'streak2', 'streak3');
+    void streakEl.offsetWidth;
+
+    scoreEl.classList.remove('on-fire');
+    streakEl.classList.remove('on-fire');
+
+    if (streak >= 10) {
+      streakEl.classList.add('streak3');
+      scoreEl.classList.add('on-fire');
+      streakEl.classList.add('on-fire');
+      try {
+        streakSound.currentTime = 0;
+        streakSound.play();
+      } catch (e) {
+        console.warn("No se pudo reproducir audio:", e);
+      }
+    } else if (streak >= 5) {
+      streakEl.classList.add('streak2');
+    } else if (streak >= 2) {
+      streakEl.classList.add('streak1');
+    }
+  }
+
+  function handleOptionClick(e, card, correct) {
+    const buttons = card.querySelectorAll('.option-button');
+    buttons.forEach(btn => btn.style.pointerEvents = 'none');
+    clearInterval(timerInterval);
+
+    const questionId = card.dataset.questionId;
+    const selectedOptionId = e.target.dataset.optionId;
+    recordTime(questionId);
+    document.getElementById(`answer_q${questionId}`).value = selectedOptionId;
+
+      if (correct) {
+      streak++;
+      const multiplier = 1 + streak * 0.1;
+      score += 100 * multiplier;
+      e.target.classList.add('correct');
+      changeKarliExpression('happy');
+    } else {
+      streak = 0;
+      e.target.classList.add('incorrect');
+      lives--;
+      changeKarliExpression('angry');
+      const heartEl = document.getElementById(`heart${lives + 1}`);
+      if (heartEl) {
+        heartEl.classList.add('lost');
+      }
+    }
+
+    updateScoreDisplay();
+
+    setTimeout(() => {
+       changeKarliExpression('neutral'); // Regresa a la imagen normal
+      current++;
+      if (lives <= 0 || current >= cards.length) {
+        document.getElementById('final_score').value = Math.round(score);
+        document.getElementById('quizForm').submit();
+      } else {
+        showCard(current);
+      }
+    }, 1000);
+  }
+
+  function loseLifeDueToTimeout() {
+    const currentCard = cards[current];
+    const questionId = currentCard.dataset.questionId;
+    recordTime(questionId);
+    streak = 0;
+    updateScoreDisplay();
+
+    lives--;
+    const heartEl = document.getElementById(`heart${lives + 1}`);
+    if (heartEl) {
+      heartEl.classList.add('lost');
+    }
+
+    current++;
+    if (lives <= 0 || current >= cards.length) {
+      document.getElementById('final_score').value = Math.round(score);
+      document.getElementById('quizForm').submit();
+    } else {
+      showCard(current);
+    }
+  }
+
+  cards.forEach(card => {
+    const buttons = card.querySelectorAll('.option-button');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', e => {
+        const correct = btn.dataset.correct === 'true';
+        handleOptionClick(e, card, correct);
+      });
+    });
+  });
+
+  if (cards.length > 0) showCard(current);
+
+
+  $.fn.boom = function(e) {
+  const colors = ['#ffb3f6', '#7aa0ff', '#333'];
+  const shapes = [
+    '<polygon class="star" points="21,0,28.05,11.29,40.97,14.51,32.41,24.71,33.34,37.99,21,33,8.65,37.99,9.58,24.71,1.02,14.51,13.94,11.29"></polygon>',
+    '<polygon class="other-star" points="18,0,22.24,13.75,36,18,22.24,22.24,18,36,13.75,22.24,0,18,13.75,13.75"></polygon>',
+    '<polygon class="diamond" points="18,0,27.19,8.81,36,18,27.19,27.19,18,36,8.81,27.19,0,18,8.81,8.81"></polygon>'
+  ];
+
+  const btn = $(this);
+  const parent = btn.closest('.btn-contain');
+
+  // Si no existe, crea el contenedor
+  let particles = parent.find('.btn-particles');
+  if (particles.length === 0) {
+    particles = $('<div class="btn-particles"></div>');
+    parent.append(particles);
+  }
+
+  let group = [];
+  const num = Math.floor(Math.random() * 50) + 30;
+
+  for (let i = 0; i < num; i++) {
+    const randBG = Math.floor(Math.random() * colors.length);
+    const getShape = Math.floor(Math.random() * shapes.length);
+    const scale = Math.floor(Math.random() * 5) + 4;
+    const x = Math.floor(Math.random() * 250) - 100;
+    const y = Math.floor(Math.random() * 250) - 100;
+    const sec = Math.floor(Math.random() * 1700) + 1000;
+
+    const shape = $('<svg class="shape">' + shapes[getShape] + '</svg>').css({
+      top: e.pageY - btn.offset().top + 20,
+      left: e.pageX - btn.offset().left + 40,
+      transform: 'scale(0.' + scale + ')',
+      transition: sec + 'ms',
+      fill: colors[randBG]
+    });
+
+    particles.append(shape);
+    group.push({ shape, x, y });
+  }
+
+  for (let g of group) {
+    g.shape.css({
+      left: g.x + 50,
+      top: g.y + 15,
+      transform: 'scale(0)'
+    });
+  }
+
+  setTimeout(() => {
+    for (let g of group) g.shape.remove();
+    group = [];
+  }, 2000);
+};
+
+$(function () {
+  $(document).on('click', 'button', function (e) {
+    $(this).boom(e);
+  });
+});
+function changeKarliExpression(expression) {
+  const karliImg = document.getElementById("karliImage");
+
+  if (!karliImg) return;
+
+  if (expression === 'happy') {
+    karliImg.src = "{{ url_for('static', filename='img/karliwei.png') }}";
+  } else if (expression === 'angry') {
+    karliImg.src = "{{ url_for('static', filename='img/karliangry.png') }}";
+  } else {
+    karliImg.src = "{{ url_for('static', filename='img/karli.png') }}";
+  }
+}
+
+</script>
+
+</body>
+</html>
